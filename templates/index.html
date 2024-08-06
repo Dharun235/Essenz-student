@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essenz Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Essenz Student</h1>
+        <form id="prompt-form">
+            <div>
+                <label for="prompt">Enter Prompt:</label>
+                <input type="text" id="prompt" name="prompt">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response">
+            <h2>Response:</h2>
+            <p id="response-text"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
